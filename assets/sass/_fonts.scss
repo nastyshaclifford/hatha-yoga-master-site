@@ -1,17 +1,35 @@
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(../fonts/Roboto-Regular.woff2);
+  font-family: "Inria Serif", sans-serif;
+  src: url(../fonts/InriaSerif-BoldItalic.woff2);
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(../fonts/Roboto-Medium.woff2);
-  font-weight: 500;
+  font-family: "Inria Serif", sans-serif;
+  src: url(../fonts/InriaSerif-Italic.woff2);
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url(../fonts/Roboto-Bold.woff2);
+  font-family: "Inria Serif", sans-serif;
+  src: url(../fonts/InriaSerif-Italic.woff2);
   font-weight: 700;
+}
+
+@font-face {
+  font-family: "Island Moments", sans-serif;
+  src: url(../fonts/IslandMoments-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(../fonts/Inter-Black.woff2);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(../fonts/Inter-Regular.woff2);
+  font-weight: 400;
 }
