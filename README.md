@@ -4,6 +4,8 @@
 
 `sass --watch assets/sass/app.scss assets/styles/style.css `
 
+`sass --watch assets/sass/about-me.scss assets/styles/about-me.css`
+
 ## Именование веток
 
 `feat/my-new-great-feature` - с таким префиксом называем ветки фичей, которые добавляют новые блоки, стили, разметку, в общем то, что будет видеть пользователь
