@@ -2,9 +2,11 @@
 
 ## Команды - инструкции по компиляции файлов Sass (SCSS) в CSS
 
-`sass --watch assets/sass/app.scss assets/styles/style.css `
+```
+sass --watch assets/sass/app.scss assets/styles/style.css
 
-`sass --watch assets/sass/about-me.scss assets/styles/about-me.css`
+sass --watch assets/sass/about-me.scss assets/styles/about-me.css
+```
 
 ## Именование веток
 
@@ -61,3 +63,19 @@ refactor(constants): rename vars for better readability
 docs(*): update readme with additional information
 docs(readme): update description of run() method
 ```
+
+## Как пользоваться eslint
+
+Выберите js файл, который хотите проверить, например это файл yourfile.js, вбейте команду ниже, если этот файл находится на том же уровне, что и index.html
+
+```jsx
+npx eslint yourfile.js
+```
+
+если файл лежит в какой-то другой директории, то не забудьте прописать до него маршрут при вводе команды. Например, мой файл лежит в папке assets и внутри нее в папке script. Тогда команда будет выглядеть так.
+
+```jsx
+npx eslint assets/script/yourfile.js
+```
+
+После этого в терминале появится поле с ошибками, которые eslint считает критичными. Их надо исправить и запустить команду еще раз
