@@ -22,6 +22,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 1126px) {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   .footer__contacts {
@@ -38,6 +43,10 @@
         height: 29px;
 
         margin-right: 30px;
+
+        @media screen and (max-width: 1130px) {
+          margin-right: 10px;
+        }
       }
     }
 
@@ -49,11 +58,27 @@
     font-size: 1.5rem; // 24px;
     letter-spacing: 0.02em;
     margin-top: 20px;
+
+    @media screen and (max-width: 1130px) {
+      font-size: 1.25rem; // 20px;
+    }
   }
 
   .footer__phone {
     letter-spacing: 0.02em;
     margin-right: 30px;
+
+    @media screen and (max-width: 1190px) {
+      font-size: 1.75rem;
+    }
+
+    @media screen and (max-width: 1160px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 1112px) {
+      font-size: 2rem;
+    }
 
     &:hover {
       color: $page-title-color;
@@ -64,6 +89,10 @@
     display: flex;
     justify-content: space-around;
     gap: 150px;
+
+    @media screen and (max-width: 1126px) {
+      display: flex;
+    }
 
     .footerbar__items {
       font-size: 1.25rem; // 20px;
