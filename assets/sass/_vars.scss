@@ -2,8 +2,14 @@
 
 $black: #000;
 $white: #fff;
-$background-color: #8e88fe;
-$page-title-color: #07242be6;
+
+$btn-color: #8e88fe;
+$btn-back-background: #b2aafa;
+$btn-about-me: #d9d9d9;
+
+$page-title-color: rgba(7, 36, 43, 0.9);
+$hero-text-color-one: rgba(7, 36, 43, 0.74);
+$hero-text-color-two: rgba(7, 36, 43, 0.75);
 
 //======== Шрифты и размеры ========//
 
@@ -13,4 +19,8 @@ $third-family: "Island Moments", sans-serif;
 
 $font-style: italic;
 $font-weight: 400;
-$font-size: 2em; // 32px
+$font-size: 2rem; // 32px
+
+//======== Радиальный градиентный фон для секций ========//
+
+$background-gradient: conic-gradient(from 0.30turn at 50% 50%, #BEBBD9 16%, #FFFFFF 39%, #918FA6 87%);

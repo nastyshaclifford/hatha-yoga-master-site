@@ -1,0 +1,25 @@
+{
+  "name": "hatha-yoga-master-site",
+  "version": "1.0.0",
+  "description": "`sass --watch assets/sass/app.scss assets/styles/style.css `",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xeni-ya/hatha-yoga-master-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xeni-ya/hatha-yoga-master-site/issues"
+  },
+  "homepage": "https://github.com/Xeni-ya/hatha-yoga-master-site#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "eslint": "^9.29.0",
+    "globals": "^16.2.0"
+  }
+}
