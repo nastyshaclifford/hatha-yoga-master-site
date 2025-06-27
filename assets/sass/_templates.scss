@@ -27,6 +27,17 @@ body {
   color: $black;
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  // контент занимает всё доступное пространство
+  flex: 1 0 auto;
+}
+
 ul {
   list-style-type: none;
 }
