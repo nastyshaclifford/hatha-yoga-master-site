@@ -1,8 +1,8 @@
-@import "normalize";
-@import "fonts";
-@import "variables";
-@import "templates";
+@use "normalize";
+@use "fonts";
+@use "variables";
+@use "templates";
 
-@import "./components/header";
-@import "./components/about-me";
-@import "./components/footer";
+@use "./components/header";
+@use "./components/about-me";
+@use "./components/footer";

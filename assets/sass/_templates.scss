@@ -41,28 +41,34 @@ a {
 .page-title {
   font-style: italic;
   font-weight: 400;
-  font-size: 2.5em; // 40px
+  font-size: 2.5rem; // 40px
   color: $page-title-color;
 }
 
 .title {
   font-style: italic;
   font-weight: 700;
-  font-size: 2.25em; // 36px
+  font-size: 2.25rem; // 36px
 }
 
 // это заголовки: "Здоровая спина» — заботьтесь о своем здоровье и комфорте каждый день" и "Растяжка в йоге — путь к гибкости и гармонии"
 .subtitle {
   font-style: italic;
   font-weight: 700;
-  font-size: 2.25em; // 32px
+  font-size: 2.25rem; // 32px
   letter-spacing: 0.02em;
 }
 
 // Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
 
 %container {
-  max-width: 1247px; // 1227px
+  max-width: 1460px; // 1440px
   margin: 0 auto;
   padding: 0 20px;
+}
+
+// Шаблон фона для секций сайта
+
+%background {
+  background: $background-gradient;
 }
