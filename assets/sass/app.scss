@@ -3,5 +3,5 @@
 @use "vars";
 @use "templates";
 
-//@use "./components/header"; //по аналогии импортируем свой раздел
+@use "./components/header"; //по аналогии импортируем свой раздел
 @use "./components/benefits";
