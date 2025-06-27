@@ -19,4 +19,8 @@ $third-family: "Island Moments", sans-serif;
 
 $font-style: italic;
 $font-weight: 400;
-$font-size: 2em; // 32px
+$font-size: 2rem; // 32px
+
+//======== Радиальный градиентный фон для секций ========//
+
+$background-gradient: conic-gradient(from 0.30turn at 50% 50%, #BEBBD9 16%, #FFFFFF 39%, #918FA6 87%);
