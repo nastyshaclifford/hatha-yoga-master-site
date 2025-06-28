@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('diplomaModal');
     const modalImg = document.getElementById('modalImage');
-    const closeBtn = document.querySelector('.modal-close');
+    const closeBtn = document.querySelector('.modal__close');
     const diplomas = document.querySelectorAll('.about-me__diploma');
 
 
