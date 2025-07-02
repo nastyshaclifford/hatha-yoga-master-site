@@ -54,7 +54,6 @@ const modalDescription = document.getElementById("modal-description");
 const modalImage = document.getElementById("modal-image");
 const closeBtn = document.querySelector(".modal-close");
 
-// Открытие модалки
 document.querySelectorAll(".more-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const id = btn.getAttribute("data-modal-id");
@@ -63,10 +62,8 @@ document.querySelectorAll(".more-btn").forEach((btn) => {
     modalTitle.textContent = practice.title;
     modalImage.src = practice.image;
 
-    // Очищаем предыдущее описание
     modalDescription.innerHTML = "";
 
-    // Добавляем каждый параграф описания
     practice.description.forEach((paragraph) => {
       const p = document.createElement("p");
       p.textContent = paragraph.text;
@@ -77,17 +74,15 @@ document.querySelectorAll(".more-btn").forEach((btn) => {
     });
 
     modal.classList.remove("hidden");
-    document.body.style.overflow = "hidden"; // Блокируем скролл страницы
+    document.body.style.overflow = "hidden";
   });
 });
 
-// Закрытие модалки
 closeBtn.addEventListener("click", () => {
   modal.classList.add("hidden");
-  document.body.style.overflow = ""; // Восстанавливаем скролл
+  document.body.style.overflow = "";
 });
 
-// Закрытие при клике вне модалки
 modal.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.classList.add("hidden");
