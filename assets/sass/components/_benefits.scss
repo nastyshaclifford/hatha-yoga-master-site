@@ -1,16 +1,13 @@
+@use "../vars" as *;
+
 .section-benefits {
+  background: $background-gradient;
+}
+.section-benefits-wrapper {
   padding: 30px;
   font-style: italic;
   max-width: 1440px;
   margin: 0 auto;
-  background: conic-gradient(
-    from 180deg at 50% 50%,
-    rgba(145, 143, 166, 0.85) -46.73deg,
-    rgba(190, 187, 217, 0.9) 57.12deg,
-    #ffffff 141.92deg,
-    rgba(145, 143, 166, 0.85) 313.27deg,
-    rgba(190, 187, 217, 0.9) 417.12deg
-  );
 }
 .section-benefits__header {
   display: flex;
