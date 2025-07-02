@@ -1,0 +1,53 @@
+@use "../templates" as *;
+@use "../vars" as *;
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 20px;
+
+    &__text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        place-items: center;
+        p {
+            font-size: clamp(12px, 2.5vw, 24px);
+            font-family: 'Inria Serif', serif;
+            font-style: italic;
+            font-weight: 400;
+            color: rgba(7, 36, 43, 0.74);
+            margin: 10px 0;
+        }
+    }
+    &__img {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        position: relative;
+        width: 75%;
+    
+        img {
+            width: 100%;
+            display: block;
+            z-index: 1;
+            border-radius: 50px;
+        }
+    }
+
+    &__about-button {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        padding: 8px 16px;
+        background-color: rgba(217, 217, 217, 1);
+        color: rgba(7, 36, 43, 0.74);
+        font-family: 'Island Moments', cursive;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 100%;
+        letter-spacing: 0;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        z-index: 2;
+    }
+}
