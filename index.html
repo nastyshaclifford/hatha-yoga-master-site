@@ -14,6 +14,11 @@
       href="./assets/icons/favicon.svg"
       type="image/svg+xml"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body>
@@ -86,12 +91,75 @@
           <h2 class="title">Практические сессии</h2>
         </section>
         <!-- Отзывы - Ксюша -->
-        <section class="section-gallery">
-          <h3 class="">
-            Ниже представлены Скриншоты отзывы моих клиентов, которые делятся
-            своим опытом занятий со мной. Я благодарю всех за доверие и
-            искренние слова!
-          </h3>
+        <section class="section-reviews">
+          <div class="section-reviews__container">
+            <h3 class="section-reviews__title">
+              Ниже представлены Скриншоты отзывы моих клиентов, которые делятся
+              своим опытом занятий со мной. Я благодарю всех за доверие и
+              искренние слова!
+            </h3>
+
+            <div class="section-reviews__wrapper">
+              <div class="section-reviews__slider-items">
+                <div class="section-reviews__slider-item item-1" data-index="0">
+                  <img
+                    src="./assets/images/review-1.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+                <div class="section-reviews__slider-item item-2" data-index="1">
+                  <img
+                    src="./assets/images/review-2.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+                <div class="section-reviews__slider-item item-3" data-index="2">
+                  <img
+                    src="./assets/images/review-3.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+                <div class="section-reviews__slider-item item-4" data-index="3">
+                  <img
+                    src="./assets/images/review-4.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+                <div class="section-reviews__slider-item item-5" data-index="4">
+                  <img
+                    src="./assets/images/review-5.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+                <div class="section-reviews__slider-item item-6" data-index="5">
+                  <img
+                    src="./assets/images/review-6.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="section-reviews__slider-nav">
+              <ul>
+                <li
+                  data-index="0"
+                  class="section-reviews__nav-item active"
+                ></li>
+                <li data-index="1" class="section-reviews__nav-item"></li>
+                <li data-index="2" class="section-reviews__nav-item"></li>
+                <li data-index="3" class="section-reviews__nav-item"></li>
+                <li data-index="4" class="section-reviews__nav-item"></li>
+                <li data-index="5" class="section-reviews__nav-item"></li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
       <!-- Подвал сайта - Ксюша -->
@@ -186,6 +254,7 @@
       </footer>
     </div>
 
-    <script type="module" src="./src/assets/scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
