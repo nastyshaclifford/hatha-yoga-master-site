@@ -101,6 +101,7 @@
         <section class="section-about" id="about"></section>
         <!-- Преимущества йоги - Ирина -->
         <section class="section-benefits" id="benefits">
+        <div class="section-benefits-wrapper">
           <div class="section-benefits__header">
             <h2 class="section-benefits__title title">Преимущества йоги</h2>
             <p class="section-benefits__subtitle">
@@ -152,7 +153,40 @@
         </section>
         <!-- Практические сессии - Ирина -->
         <section class="section-practices" id="practices">
-          <h2 class="title">Практические сессии</h2>
+          <div class="section-practices-wrapper">
+          <h2 class="section-practices__title title">Практические сессии</h2>
+          <p class="practices-subtitle subtitle">Предлагаю индивидуальные и групповые занятия, а также специальные программы для начинающих и продвинутых. </p>
+          <ul class="practices__list">
+            <li class="practices__list-item"><div class="practices-card"><img src="./assets/images/card1.png" alt="Здоровая спина"><p class="practices-price">1000 р</p><p class="practices-card-name">Здоровая спина</p><button class="more-btn" id="more-btn" data-modal-id="0">Подробнее</button>
+            </div>
+            </li>
+            <li class="practices__list-item"><div class="practices-card"><img src="./assets/images/card2.png" alt="Растяжка"><p class="practices-price">1000 р</p><p class="practices-card-name">Растяжка</p><button class="more-btn" id="more-btn" data-modal-id="1">Подробнее</button>
+            </div></li>
+            <li class="practices__list-item"><div class="practices-card"><img src="./assets/images/card3.png" alt="Сложные асаны"><p class="practices-price">1000 р</p><p class="practices-card-name">Сложные асаны</p><button class="more-btn" id="more-btn" data-modal-id="2">Подробнее</button>
+            </div></li>
+            <li class="practices__list-item"><div class="practices-card"><img src="./assets/images/card4.png" alt="Медитация с поющими чашами"><p class="practices-price">1000 р</p><p class="practices-card-name">Медитация с поющими чашами</p><button class="more-btn" id="more-btn" data-modal-id="3">Подробнее</button>
+            </div></li>
+          </ul>
+          <div class="practices-text">
+            <p>Бонус!</p>
+            <p>При покупке любой практики — подарок: видео «Йогатерапия женского здоровья». Заботьтесь о себе и укрепляйте женское здоровье вместе со мной!</p>
+          </div>
+          </div>
+          <div class="modal hidden" id="modal">
+            <div class="modal-content">
+              <span class="modal-close">X</span>
+              <h3 id="modal-title"></h3>
+              <div class="modal-info">
+                <div id="modal-description"></div>
+                <img class="modal-image" id="modal-image" src="" alt="изображение с курса">
+              </div>
+              <div class="modal-price">
+                <button class="buy-btn" id="buy-btn">Купить</button>
+<p class="price">Цена: 1000 р</p>
+              </div>
+            </div>
+
+          </div>
         </section>
         <!-- Отзывы - Ксюша -->
         <section class="section-reviews" id="gallery">
@@ -320,5 +354,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./assets/scripts/main.js"></script>
+     <script type="module" src="./assets/scripts/practices.js"></script>
+   
   </body>
 </html>
