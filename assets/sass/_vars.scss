@@ -24,3 +24,5 @@ $font-size: 2rem; // 32px
 //======== Радиальный градиентный фон для секций ========//
 
 $background-gradient: conic-gradient(from 180deg at 50% 50%, rgba(145, 143, 166, 0.85) -46.73deg, rgba(190, 187, 217, 0.9) 57.12deg, rgb(255, 255, 255) 141.92deg, rgba(145, 143, 166, 0.85) 313.27deg, rgba(190, 187, 217, 0.9) 417.12deg);
+
+$background-gradient-reviews: radial-gradient(50% 50% at 50% 50%, #FCFCFC 0%, #D2D2D2 100%);
