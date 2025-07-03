@@ -86,9 +86,7 @@
     border-radius: 50px;
     cursor: pointer;
     z-index: 2;
+        &:hover{box-shadow: 0 0 12px #8e88fe, 0 4px 20px rgba(0, 0, 0, 0.1);
     }
-    &:hover{box-shadow: 0 0 12px #8e88fe, 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-
 }
-} 
+}}  
