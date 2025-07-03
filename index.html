@@ -14,35 +14,55 @@
       href="./assets/icons/favicon.svg"
       type="image/svg+xml"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body>
     <div id="app">
       <!-- Шапка сайта - Ирина Яруткина -->
       <header class="header">
-        <div class="nav"> 
+        <div class="nav">
           <!-- Бургер -->
-          <button class="nav__burger" aria-label="Открыть меню">
-            ☰
-          </button>
-          <div class="nav__menu"> 
-            <div class="nav__left"> 
-              <a href="https://vk.com/id36386513" class="nav__button" target="_blank"> 
-                <img src="assets/icons/vk-white-icon.svg" alt="VK"> ВКонтакте
+          <button class="nav__burger" aria-label="Открыть меню">☰</button>
+          <div class="nav__menu">
+            <div class="nav__left">
+              <a
+                href="https://vk.com/id36386513"
+                class="nav__button"
+                target="_blank"
+              >
+                <img src="assets/icons/vk-white-icon.svg" alt="VK" /> ВКонтакте
               </a>
             </div>
             <nav class="nav__center">
-              <a href="#">Обо мне</a>
-              <a href="#">Преимущества</a>
-              <a href="#">Практики</a>
-              <a href="#">Отзывы</a>
+              <a href="about-me.html">Обо мне</a>
+              <a href="#benefits">Преимущества</a>
+              <a href="#practices">Практики</a>
+              <a href="#gallery">Отзывы</a>
             </nav>
-            <div class="nav__right"> 
-              <a href="https://www.instagram.com/irina_korotkovskaya?igsh=MTFiaWkzdnBtNmppNA==" class="nav__button" target="_blank"> 
-                <img src="assets/icons/instagram-white-icon.svg" alt="Instagram"> Instagram 
+            <div class="nav__right">
+              <a
+                href="https://www.instagram.com/irina_korotkovskaya?igsh=MTFiaWkzdnBtNmppNA=="
+                class="nav__button"
+                target="_blank"
+              >
+                <img
+                  src="assets/icons/instagram-white-icon.svg"
+                  alt="Instagram"
+                />
+                Instagram
               </a>
-              <a href="https://t.me/egoirinavl" class="nav__button" target="_blank"> 
-                <img src="assets/icons/tg-white-icon.svg" alt="Telegram"> Telegram
+              <a
+                href="https://t.me/egoirinavl"
+                class="nav__button"
+                target="_blank"
+              >
+                <img src="assets/icons/tg-white-icon.svg" alt="Telegram" />
+                Telegram
               </a>
             </div>
           </div>
@@ -55,25 +75,32 @@
           <h1 class="page__title">
             Добро пожаловать в мир гармонии и внутреннего баланса
           </h1>
-          <div class="hero__content"> 
-            <div class="hero__text"> 
-                <p> 
-                    Откройте для себя путь к здоровью, спокойствию и вдохновению вместе со мной.
-                </p>
-                <p> 
-                    Йога похожа на музыку. Ритм тела, мелодия духа и гармония души создают симфонию.
-                </p> 
+          <div class="hero__content">
+            <div class="hero__text">
+              <p>
+                Откройте для себя путь к здоровью, спокойствию и вдохновению
+                вместе со мной.
+              </p>
+              <p>
+                Йога похожа на музыку. Ритм тела, мелодия духа и гармония души
+                создают симфонию.
+              </p>
             </div>
-            <div class="hero__img"> 
-                <img src="assets/images/hero.png" alt="Ирина Егорова" >
-                <button class="hero__about-button">About me</button> 
+            <div class="hero__img">
+              <img src="assets/images/hero.png" alt="Ирина Егорова" />
+              <button
+                class="hero__about-button"
+                onclick="location.href='about-me.html'"
+              >
+                About me
+              </button>
             </div>
-        </div>
+          </div>
         </section>
         <!-- Обо мне - Настя -->
-        <section class="section-about"></section>
+        <section class="section-about" id="about"></section>
         <!-- Преимущества йоги - Ирина -->
-        <section class="section-benefits">
+        <section class="section-benefits" id="benefits">
         <div class="section-benefits-wrapper">
           <div class="section-benefits__header">
             <h2 class="section-benefits__title title">Преимущества йоги</h2>
@@ -125,7 +152,7 @@
           </div>
         </section>
         <!-- Практические сессии - Ирина -->
-        <section class="section-practices">
+        <section class="section-practices" id="practices">
           <div class="section-practices-wrapper">
           <h2 class="section-practices__title title">Практические сессии</h2>
           <p class="practices-subtitle subtitle">Предлагаю индивидуальные и групповые занятия, а также специальные программы для начинающих и продвинутых. </p>
@@ -162,13 +189,75 @@
           </div>
         </section>
         <!-- Отзывы - Ксюша -->
-        <section class="section-gallery">
-          <h3 class="">
-            Ниже представлены Скриншоты отзывы моих клиентов, которые делятся
-            своим опытом занятий со мной. Я благодарю всех за доверие и
-            искренние слова!
-          </h3>
-        </div>
+        <section class="section-reviews" id="gallery">
+          <div class="section-reviews__container">
+            <h3 class="section-reviews__title">
+              Ниже представлены Скриншоты отзывы моих клиентов, которые делятся
+              своим опытом занятий со мной. Я благодарю всех за доверие и
+              искренние слова!
+            </h3>
+
+            <div class="section-reviews__wrapper">
+              <div class="section-reviews__slider-items">
+                <div class="section-reviews__slider-item item-1" data-index="0">
+                  <img
+                    src="./assets/images/review-1.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+                <div class="section-reviews__slider-item item-2" data-index="1">
+                  <img
+                    src="./assets/images/review-2.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+                <div class="section-reviews__slider-item item-3" data-index="2">
+                  <img
+                    src="./assets/images/review-3.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+                <div class="section-reviews__slider-item item-4" data-index="3">
+                  <img
+                    src="./assets/images/review-4.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+                <div class="section-reviews__slider-item item-5" data-index="4">
+                  <img
+                    src="./assets/images/review-5.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+                <div class="section-reviews__slider-item item-6" data-index="5">
+                  <img
+                    src="./assets/images/review-6.JPG"
+                    alt="Скриншот отзыва"
+                    class="section-reviews__slider-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="section-reviews__slider-nav">
+              <ul>
+                <li
+                  data-index="0"
+                  class="section-reviews__nav-item active"
+                ></li>
+                <li data-index="1" class="section-reviews__nav-item"></li>
+                <li data-index="2" class="section-reviews__nav-item"></li>
+                <li data-index="3" class="section-reviews__nav-item"></li>
+                <li data-index="4" class="section-reviews__nav-item"></li>
+                <li data-index="5" class="section-reviews__nav-item"></li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
       <!-- Подвал сайта - Ксюша -->
@@ -263,7 +352,9 @@
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./assets/scripts/main.js"></script>
-    <script type="module" src="./assets/scripts/practices.js"></script>
+     <script type="module" src="./assets/scripts/practices.js"></script>
+   
   </body>
 </html>
