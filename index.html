@@ -24,19 +24,83 @@
   <body>
     <div id="app">
       <!-- Шапка сайта - Ирина Яруткина -->
-      <header class="header"></header>
+      <header class="header">
+        <div class="nav">
+          <!-- Бургер -->
+          <button class="nav__burger" aria-label="Открыть меню">☰</button>
+          <div class="nav__menu">
+            <div class="nav__left">
+              <a
+                href="https://vk.com/id36386513"
+                class="nav__button"
+                target="_blank"
+              >
+                <img src="assets/icons/vk-white-icon.svg" alt="VK" /> ВКонтакте
+              </a>
+            </div>
+            <nav class="nav__center">
+              <a href="about-me.html">Обо мне</a>
+              <a href="#benefits">Преимущества</a>
+              <a href="#practices">Практики</a>
+              <a href="#gallery">Отзывы</a>
+            </nav>
+            <div class="nav__right">
+              <a
+                href="https://www.instagram.com/irina_korotkovskaya?igsh=MTFiaWkzdnBtNmppNA=="
+                class="nav__button"
+                target="_blank"
+              >
+                <img
+                  src="assets/icons/instagram-white-icon.svg"
+                  alt="Instagram"
+                />
+                Instagram
+              </a>
+              <a
+                href="https://t.me/egoirinavl"
+                class="nav__button"
+                target="_blank"
+              >
+                <img src="assets/icons/tg-white-icon.svg" alt="Telegram" />
+                Telegram
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
       <!-- Основное контент -->
       <main>
         <!-- Герой-секция - Ирина Яруткина -->
-        <section class="section-hero">
-          <h1 class="page-title">
+        <section class="hero">
+          <h1 class="page__title">
             Добро пожаловать в мир гармонии и внутреннего баланса
           </h1>
+          <div class="hero__content">
+            <div class="hero__text">
+              <p>
+                Откройте для себя путь к здоровью, спокойствию и вдохновению
+                вместе со мной.
+              </p>
+              <p>
+                Йога похожа на музыку. Ритм тела, мелодия духа и гармония души
+                создают симфонию.
+              </p>
+            </div>
+            <div class="hero__img">
+              <img src="assets/images/hero.png" alt="Ирина Егорова" />
+              <button
+                class="hero__about-button"
+                onclick="location.href='about-me.html'"
+              >
+                About me
+              </button>
+            </div>
+          </div>
         </section>
         <!-- Обо мне - Настя -->
-        <section class="section-about"></section>
+        <section class="section-about" id="about"></section>
         <!-- Преимущества йоги - Ирина -->
-        <section class="section-benefits">
+        <section class="section-benefits" id="benefits">
           <div class="section-benefits__header">
             <h2 class="section-benefits__title title">Преимущества йоги</h2>
             <p class="section-benefits__subtitle">
@@ -87,11 +151,11 @@
           </div>
         </section>
         <!-- Практические сессии - Ирина -->
-        <section class="section-practices">
+        <section class="section-practices" id="practices">
           <h2 class="title">Практические сессии</h2>
         </section>
         <!-- Отзывы - Ксюша -->
-        <section class="section-reviews">
+        <section class="section-reviews" id="gallery">
           <div class="section-reviews__container">
             <h3 class="section-reviews__title">
               Ниже представлены Скриншоты отзывы моих клиентов, которые делятся
