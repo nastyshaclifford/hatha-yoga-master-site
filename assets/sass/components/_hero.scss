@@ -1,53 +1,94 @@
 @use "../templates" as *;
 @use "../vars" as *;
-.hero {
+
+.background-hero{
+    background: $background-gradient;
+
+.hero { 
+&__content {
+    max-width: 1440px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin: 0 20px;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto;
+}
 
-    &__text {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        place-items: center;
-        p {
-            font-size: clamp(12px, 2.5vw, 24px);
-            font-family: 'Inria Serif', serif;
-            font-style: italic;
-            font-weight: 400;
-            color: rgba(7, 36, 43, 0.74);
-            margin: 10px 0;
-        }
-    }
-    &__img {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        position: relative;
-        width: 75%;
-    
-        img {
-            width: 100%;
-            display: block;
-            z-index: 1;
-            border-radius: 50px;
-        }
-    }
+&__title{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    text-align: center; 
+    font-family: $font-family;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.5rem; // 40px
+    line-height: 100%;
+    letter-spacing: 0;
+    color: $page-title-color;
+}
+&__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nrap;
+    margin: 0 auto;
+    padding: 30px;
+}
+&__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+}
 
-    &__about-button {
-        position: absolute;
-        top: 20px;
-        right: 0;
-        padding: 8px 16px;
-        background-color: rgba(217, 217, 217, 1);
-        color: rgba(7, 36, 43, 0.74);
-        font-family: 'Island Moments', cursive;
-        font-weight: 400;
-        font-size: 1.25rem;
-        line-height: 100%;
-        letter-spacing: 0;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        z-index: 2;
+&__text-one,
+&__text-two {
+    font-family: $font-family;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+&__text-one {
+    color: $hero-text-color-one;
+}
+
+&__text-two {
+    color: $hero-text-color-two;
+}
+
+&__img {
+    position: relative;
+    width: 697px; 
+    max-width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        z-index: 1;
+        border-radius: 50px;
     }
 }
+
+&__about-button {
+    position: absolute;
+    top: 20px;
+    right: 0; 
+    padding: 12px 22px;
+    background-color: rgba(217, 217, 217, 1);
+    color: rgba(7, 36, 43, 0.74);
+    font-family: $third-family; 
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 100%;
+    letter-spacing: 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 2;
+    }
+    &:hover{box-shadow: 0 0 12px #8e88fe, 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+}
+} 
