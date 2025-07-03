@@ -6,6 +6,10 @@
 sass --watch assets/sass/app.scss assets/styles/style.css
 
 sass --watch assets/sass/about-me.scss assets/styles/about-me.css
+
+sass --watch assets/sass/privacy-policy.scss assets/styles/privacy-policy.css
+
+sass --watch assets/sass/offer.scss assets/styles/offer.css
 ```
 
 ## Именование веток
