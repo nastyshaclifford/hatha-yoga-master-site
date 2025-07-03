@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const sliderItems = document.querySelectorAll('.section-reviews__slider-item');
     const navItems = document.querySelectorAll('.section-reviews__nav-item');
 
+    //открыто ли модальное окно?
+    const modalOpen = () => document.body.classList.contains('modal-open');
+
     class Carousel {
         constructor(container, itemsContainer, items, nav) {
             this.carouselContainer = container;
@@ -51,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             //новые классы для слайдов
             this.carouselArray.forEach((el, i) => {
-                const pos = (i - this.currentIndex + this.carouselArray.length) % this.carouselArray.length;  //расчитываем положение слайда относительно центрального
+                const pos = (i - this.currentIndex + this.carouselArray.length) % this.carouselArray.length;  //рассчитываем положение слайда относительно центрального
                 el.classList.add(`item-${pos}`);
             });
 
@@ -60,21 +63,32 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 300);
         }
 
+        // 1. обработчик
+        // навигация слайдера в виде точек
         setNavControls() {
             this.navItems.forEach((item, index) => {
-                item.addEventListener('click', () => {
-                    this.currentIndex = (index - 2 + this.carouselArray.length) % this.carouselArray.length; //вычесляем индекс и обновляем слайдер
+                item.addEventListener('click', (e) => {
+                    if (modalOpen()) {
+                        e.stopPropagation();
+                        return;
+                    }
+
+                    this.currentIndex = (index - 2 + this.carouselArray.length) % this.carouselArray.length; //вычисляем индекс и обновляем слайдер
                     this.updateSlider();
                 });
             });
         }
 
+        // 2. обработчик
         // прокрутка слайдов мышкой
         setupEventListeners() {
             this.carouselContainer.addEventListener('wheel', (e) => {
-                e.preventDefault();
-                if (this.isAnimating) return;
+                if (this.isAnimating || modalOpen()) {
+                    e.preventDefault();
+                    return;
+                };
 
+                e.preventDefault();
                 if (e.deltaY > 0) {
                     this.currentIndex = (this.currentIndex + 1) % this.carouselArray.length;
                 } else {
@@ -83,9 +97,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.updateSlider();
             });
 
-            // прокрутка слайдов по  клику на слайд (после чего слайд становится по ценру)
+            // 3. обработчик
+            // прокрутка слайдов по  клику на слайд (после чего слайд становится по центру)
             this.carouselArray.forEach(item => {
-                item.addEventListener('click', () => {
+                item.addEventListener('click', (e) => {
+                    if (modalOpen()) {
+                        e.stopPropagation();
+                        return;
+                    }
                     const index = parseInt(item.getAttribute('data-index'));
                     this.currentIndex = (index - 2 + this.carouselArray.length) % this.carouselArray.length;
                     this.updateSlider();
