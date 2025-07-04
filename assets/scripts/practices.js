@@ -75,17 +75,20 @@ document.querySelectorAll(".more-btn").forEach((btn) => {
 
     modal.classList.remove("hidden");
     document.body.style.overflow = "hidden";
+    document.body.classList.add("modal-open");
   });
 });
 
 closeBtn.addEventListener("click", () => {
   modal.classList.add("hidden");
   document.body.style.overflow = "";
+  document.body.classList.remove("modal-open");
 });
 
 modal.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.classList.add("hidden");
     document.body.style.overflow = "";
+    document.body.classList.remove("modal-open");
   }
 });
