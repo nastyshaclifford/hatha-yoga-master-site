@@ -4,7 +4,6 @@
 .main {
   font-size: 1.5rem;
   letter-spacing: 0.02em;
-  margin-bottom: 30px;
 
   .main__container {
     @extend %container;
@@ -24,9 +23,14 @@
 
   & p {
     margin: 10px 0;
+    text-align: justify;
   }
 
   & a {
     color: $btn-color;
+  }
+
+  & address {
+    margin-bottom: 30px;
   }
 }
