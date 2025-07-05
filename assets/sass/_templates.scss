@@ -71,6 +71,8 @@ a {
   letter-spacing: 0.02em;
 }
 
+//================== Шаблоны ====================//
+
 // Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
 
 %container {
@@ -83,4 +85,45 @@ a {
 
 %background {
   background: $background-gradient;
+}
+
+//================== Кнопки ====================//
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 15px;
+  background: none;
+  padding: 0;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.25);
+  max-height: 50px;
+  width: auto;
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+
+  @media screen and (max-width: 425px) {
+    height: 40px;
+  }
+}
+
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top__icon {
+  width: 50px;
+  height: 50px;
+
+  @media screen and (max-width: 425px) {
+    width: 40px;
+    height: 40px;
+  }
 }
