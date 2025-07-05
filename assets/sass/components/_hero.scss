@@ -5,19 +5,15 @@
     background: $background-gradient;
 
 .hero { 
-&__content {
-    max-width: 1440px;
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto auto;
-}
+    @extend %container;
+
 
 &__title{
     grid-column: 1/2;
     grid-row: 1/2;
     justify-self: center;
     text-align: center; 
-    font-family: $font-family;
+    font-family: "Inria Serif", sans-serif; 
     font-weight: 400;
     font-style: italic;
     font-size: 2.5rem; // 40px
@@ -26,16 +22,17 @@
     color: $page-title-color;
 }
 &__content{
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nrap;
+    flex-wrap: nowrap;
     margin: 0 auto;
     padding: 30px;
 }
 &__text {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-right: 10px;
 }
 
@@ -44,7 +41,7 @@
     font-family: $font-family;
     font-weight: 400;
     font-style: italic;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 100%;
     letter-spacing: 0;
 }
@@ -59,12 +56,13 @@
 
 &__img {
     position: relative;
-    width: 697px; 
-    max-width: 100%;
+    width: 100%;
+    max-width: 697px;
     img {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: block;
+        position: relative;
         z-index: 1;
         border-radius: 50px;
     }
@@ -72,9 +70,9 @@
 
 &__about-button {
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 0; 
-    padding: 12px 22px;
+    padding: 20px 25px;
     background-color: rgba(217, 217, 217, 1);
     color: rgba(7, 36, 43, 0.74);
     font-family: $third-family; 
@@ -83,10 +81,35 @@
     line-height: 100%;
     letter-spacing: 0;
     border: none;
-    border-radius: 50px;
+    border-radius: 25px;
     cursor: pointer;
     z-index: 2;
         &:hover{box-shadow: 0 0 12px #8e88fe, 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 }
 }}  
+
+.background-hero {
+    @media (max-width: 768px) {
+        .hero {
+        &__content {
+            flex-direction: column;
+            padding: 20px;
+            gap: 30px;
+        }
+        &__text {
+            margin-right: 0;
+            gap: 20px;
+        }
+        &__img {
+            width: 100%;
+            max-width: 100%;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        }
+    }
+}
