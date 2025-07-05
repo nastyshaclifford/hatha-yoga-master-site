@@ -23,6 +23,7 @@ const practicesData = [
     description: [
       {
         text: "Откройте для себя искусство мягкого и глубокого вытяжения, которое помогает раскрыть потенциал вашего тела, снять напряжение и восстановить баланс. В каждом движении — забота о себе, укрепление связок и суставов, а также ощущение легкости и свободы. Пусть ваша практика растяжки станет источником вдохновения и внутренней гармонии.",
+        className: "practice-item2",
       },
     ],
     image: "./assets/images/modal2.png",
@@ -32,6 +33,7 @@ const practicesData = [
     description: [
       {
         text: "Погрузитесь в мир продвинутых поз, которые развивают силу, гибкость и концентрацию. Эта практика поможет преодолеть границы возможностей, укрепить внутреннюю стойкость и достичь новых высот в йоге. Испытайте себя и почувствуйте невероятное удовлетворение от каждого выполненного сложного асана!",
+        className: "practice-item3",
       },
     ],
     image: "./assets/images/modal3.png",
@@ -42,6 +44,7 @@ const practicesData = [
     description: [
       {
         text: "Позвольте звукам поющих чаш наполнить ваше сердце спокойствием, снять напряжение и восстановить баланс энергии. Эта практика помогает глубже сосредоточиться, очистить ум и обрести гармонию с собой. Откройте для себя силу звука и почувствуйте, как каждая волна вибрации наполняет вас умиротворением.",
+        className: "practice-item4",
       },
     ],
     image: "./assets/images/modal4.png",
@@ -75,20 +78,17 @@ document.querySelectorAll(".more-btn").forEach((btn) => {
 
     modal.classList.remove("hidden");
     document.body.style.overflow = "hidden";
-    document.body.classList.add("modal-open");
   });
 });
 
 closeBtn.addEventListener("click", () => {
   modal.classList.add("hidden");
   document.body.style.overflow = "";
-  document.body.classList.remove("modal-open");
 });
 
 modal.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.classList.add("hidden");
     document.body.style.overflow = "";
-    document.body.classList.remove("modal-open");
   }
 });

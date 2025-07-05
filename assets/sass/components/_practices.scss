@@ -77,7 +77,6 @@
   margin: 60px auto;
 }
 .modal {
-  display: none;
   background-color: white;
   position: fixed;
   top: 0;
@@ -88,6 +87,7 @@
   z-index: 1000;
 }
 .modal-content {
+  margin: 50px auto;
   background-color: #fff;
   color: #000;
   padding: 30px;
@@ -148,6 +148,9 @@
 }
 .modal-info {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
 }
 .modal-image {
   max-width: 500px;
@@ -156,6 +159,20 @@
 .hidden {
   display: none;
 }
+.p-2 {
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.practice-item2 {
+  max-width: 600px;
+}
+.practice-item3 {
+  max-width: 580px;
+}
+.practice-item4 {
+  max-width: 625px;
+}
 @media (max-width: 1340px) {
   .practices__list {
     justify-content: flex-start;
@@ -163,8 +180,16 @@
     gap: 20px;
   }
 }
+@media (max-width: 1210px) {
+  .modal-content {
+    overflow-y: auto;
+  }
+}
 @media (max-width: 723px) {
   .practices__list {
     justify-content: center;
+  }
+  .modal-image {
+    display: none;
   }
 }
