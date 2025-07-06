@@ -2,7 +2,7 @@
 @use "../vars" as *;
 
 .background-hero{
-    background: $background-gradient;
+    background: $background-gradient; 
 
 .hero { 
     @extend %container;
