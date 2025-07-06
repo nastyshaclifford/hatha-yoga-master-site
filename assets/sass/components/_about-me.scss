@@ -170,6 +170,29 @@
     }
 }
 
+    @media (max-width: 1315px) {
+        .about-me__paragraph {
+        font-size: 1.25rem;
+        }
+    
+        .about-me__diplomas {
+        margin-top: -180px;
+        }
+    }
+
+
+    @media (max-width: 1140px) {
+        .about-me__paragraph {
+        font-size: 1.15rem;
+        }
+        .about-me__img {
+            width: 100%;
+            height: auto;
+        }
+        .about-me__diplomas {
+            margin-top: 30px;
+        }
+        }
 
 @media (max-width: 1024px) {
     .about-me__photo-and-text {
@@ -260,7 +283,7 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     .about-me__photo-and-text {
     flex-direction: column;
     }
