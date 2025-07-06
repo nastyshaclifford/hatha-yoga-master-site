@@ -26,6 +26,35 @@
     &__right {
         display: flex;
         gap: 12px;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            line-height: 100%;
+            letter-spacing: 0;
+            color: #ffffff;
+            text-decoration: none;
+            img {
+                height: 16px;
+                width: 16px;
+            }
+        }
+    }
+
+    .nav__left a{
+        font-family: $font-family;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 0.625rem;
+
+    }
+    .nav__right a{
+        font-family: $third-family;
+        font-weight: 400;
+        font-style: normal;
+        font-size:  1rem;
+        
     }
 
     &__center {
@@ -36,8 +65,12 @@
         gap: 40px;
 
         a {
+            font-family: $second-family;
+            font-style: normal; 
             font-weight: 900;
             font-size: 0.875rem;
+            line-height: 100%;
+            letter-spacing: 0.02em;
             text-transform: uppercase;
             color: #ffffff;
             text-decoration: none;
