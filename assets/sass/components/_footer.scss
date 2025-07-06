@@ -9,6 +9,10 @@
 
   .footer__container {
     @extend %container;
+
+    @media screen and (max-width: 1126px) {
+      margin: 0 20px;
+    }
   }
 
   .footer__subtitle {
@@ -80,6 +84,10 @@
       font-size: 2rem;
     }
 
+    @media screen and (max-width: 340px) {
+      font-size: 1.5rem;
+    }
+
     &:hover {
       color: $page-title-color;
     }
@@ -91,7 +99,18 @@
     gap: 150px;
 
     @media screen and (max-width: 1126px) {
-      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width: 570px) {
+      width: 100%;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    @media screen and (max-width: 475px) {
+      flex-direction: column;
     }
 
     .footerbar__items {
