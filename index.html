@@ -16,7 +16,7 @@
 <body>
   <div id="app">
     <!-- Шапка сайта - Ирина Яруткина -->
-    <div class="background-hero">
+    <div class="background-hero" id="header">
       <header class="header">
         <div class="nav">
           <!-- Бургер -->
@@ -50,7 +50,7 @@
       <!-- Основное контент -->
       <main>
         <!-- Герой-секция - Ирина Яруткина -->
-        <section class="hero">
+        <section class="hero" id="hero">
           <h1 class="hero__title">
             Добро пожаловать в мир гармонии и внутреннего баланса
           </h1>
@@ -253,7 +253,7 @@
           <nav class="footerbar">
             <ul class="footerbar__items">
               <li class="footerbar__item">
-                <p class="footerbar__title">Главная</p>
+                <a href="#header" class="footerbar__title">Главная</a>
               </li>
               <li class="footerbar__item">
                 <a href="./assets/pages/about-me.html" class="footerbar__link">Обо мне</a>
@@ -274,10 +274,10 @@
                 <p class="footerbar__title">Прочее</p>
               </li>
               <li class="footerbar__item">
-                <a href="./assets/pages/offer.html" class="footerbar__link">Оферта</a>
+                <a href="./assets/pages/offer.html" target="_blank" class="footerbar__link">Оферта</a>
               </li>
               <li class="footerbar__item">
-                <a href="./assets/pages/privacy-policy.html" class="footerbar__link">
+                <a href="./assets/pages/privacy-policy.html" target="_blank" class="footerbar__link">
                   Политика конфиденциальности
                 </a>
               </li>
