@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('diplomaModal');
     const modalImg = document.getElementById('modalImage');
@@ -33,3 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// кнопка back
+    document.getElementById("backButton").addEventListener("click", () => {
+        console.log('Кнопка "Назад" нажата'); 
+        if (window.history.length > 1) {
+        window.history.back();
+        } else {
+        window.location.href = "../../index.html"; 
+        }
+    });
