@@ -92,3 +92,10 @@ modal.addEventListener("click", (e) => {
     document.body.style.overflow = "";
   }
 });
+
+document.getElementById("buy-btn").addEventListener("click", function () {
+  window.open(
+    "https://forms.yandex.ru/cloud/6865201584227c58309d0cde",
+    "_blank"
+  );
+});
