@@ -1,115 +1,132 @@
 @use "../templates" as *;
 @use "../vars" as *;
 
-.background-hero{
-    background: $background-gradient; 
+.background-hero {
+  background: $background-gradient;
 
-.hero { 
+  .hero {
     @extend %container;
 
 
-&__title{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    justify-self: center;
-    text-align: center; 
-    font-family: "Inria Serif", sans-serif; 
-    font-weight: 400;
-    font-style: italic;
-    font-size: 2.5rem; // 40px
-    line-height: 100%;
-    letter-spacing: 0;
-    color: $page-title-color;
-}
-&__content{
-    max-width: 1440px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 0 auto;
-    padding: 30px;
-}
-&__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-right: 10px;
-}
+    &__title {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      justify-self: center;
+      text-align: center;
+      font-family: "Inria Serif", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 2.5rem; // 40px
+      line-height: 100%;
+      letter-spacing: 0;
+      color: $page-title-color;
+    }
 
-&__text-one,
-&__text-two {
-    font-family: $font-family;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 2.5rem;
-    line-height: 100%;
-    letter-spacing: 0;
-}
+    &__content {
+      max-width: 1440px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: 0 auto;
+      padding: 30px;
+    }
 
-&__text-one {
-    color: $hero-text-color-one;
-}
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-right: 10px;
+    }
 
-&__text-two {
-    color: $hero-text-color-two;
-}
+    &__text-one,
+    &__text-two {
+      font-family: $font-family;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 2.5rem;
+      line-height: 100%;
+      letter-spacing: 0;
 
-&__img {
-    position: relative;
-    width: 100%;
-    max-width: 697px;
-    img {
+      @media screen and (max-width: 893px) {
+        font-size: 2rem;
+      }
+    }
+
+    &__text-one {
+      color: $hero-text-color-one;
+    }
+
+    &__text-two {
+      color: $hero-text-color-two;
+    }
+
+    &__img {
+      position: relative;
+      width: 100%;
+      max-width: 697px;
+
+      img {
         width: 100%;
         height: 100%;
         display: block;
         position: relative;
         z-index: 1;
         border-radius: 50px;
+      }
     }
-}
 
-&__about-button {
-    position: absolute;
-    top: 25px;
-    right: 0; 
-    padding: 20px 25px;
-    background-color: rgba(217, 217, 217, 1);
-    color: rgba(7, 36, 43, 0.74);
-    font-family: $third-family; 
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 100%;
-    letter-spacing: 0;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    z-index: 2;
-        &:hover{box-shadow: 0 0 12px #8e88fe, 0 4px 20px rgba(0, 0, 0, 0.1);
+    &__about-button {
+      position: absolute;
+      top: 25px;
+      right: 0;
+      padding: 20px 25px;
+      background-color: rgba(217, 217, 217, 1);
+      color: rgba(7, 36, 43, 0.74);
+      font-family: $third-family;
+      font-weight: 400;
+      font-size: 3rem;
+      line-height: 100%;
+      letter-spacing: 0;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      z-index: 2;
+
+      &:hover {
+        box-shadow: 0 0 12px #8e88fe, 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      @media screen and (max-width: 893px) {
+        font-size: 2.125rem;
+      }
     }
+  }
 }
-}}  
 
 .background-hero {
-    @media (max-width: 768px) {
-        .hero {
-        &__content {
-            flex-direction: column;
-            padding: 20px;
-            gap: 30px;
+  @media (max-width: 768px) {
+    .hero {
+      &__content {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+      }
+
+      &__text {
+        margin-right: 0;
+        gap: 20px;
+      }
+
+      &__img {
+        width: 100%;
+        max-width: 100%;
+
+        img {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
         }
-        &__text {
-            margin-right: 0;
-            gap: 20px;
-        }
-        &__img {
-            width: 100%;
-            max-width: 100%;
-            img {
-                width: 100%;
-                max-width: 100%;
-                height: auto;
-            }
-        }
-        }
+      }
     }
+  }
 }
