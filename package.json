@@ -1,28 +1,18 @@
 {
   "name": "hatha-yoga-master-site",
-  "version": "1.0.0",
-  "description": "`sass --watch assets/sass/app.scss assets/styles/style.css `",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Xeni-ya/hatha-yoga-master-site.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Xeni-ya/hatha-yoga-master-site/issues"
-  },
-  "homepage": "https://github.com/Xeni-ya/hatha-yoga-master-site#readme",
   "devDependencies": {
-    "@eslint/js": "^9.30.1",
-    "eslint": "^9.30.1",
-    "globals": "^16.3.0"
+    "sass": "^1.89.2",
+    "vite": "^7.0.0"
   },
   "dependencies": {
-    "swiper": "^11.2.10"
+    "normalize.css": "^8.0.1"
   }
 }
