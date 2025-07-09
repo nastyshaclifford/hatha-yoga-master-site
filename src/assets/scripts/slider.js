@@ -120,4 +120,113 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   new Carousel(sliderContainer, sliderItemsContainer, sliderItems, navItems);
+
+  // Создаем модальное окно для увеличенного изображения
+  const modal = document.createElement('div');
+  modal.className = 'image-modal';
+  modal.innerHTML = `
+    <div class="image-modal__content">
+      <span class="image-modal__close">&times;</span>
+      <img class="image-modal__img" src="" alt="Увеличенное изображение">
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  // Добавляем стили для модального окна
+  const style = document.createElement('style');
+  style.textContent = `
+    .image-modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow: auto;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    
+    .image-modal.show {
+      display: block;
+      opacity: 1;
+    }
+    
+    .image-modal__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      position: relative;
+    }
+    
+    .image-modal__img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+    
+    .image-modal__close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 35px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    .image-modal__close:hover {
+      color: #ccc;
+    }
+    
+    body.modal-open {
+      overflow: hidden;
+    }
+  `;
+  document.head.appendChild(style);
+
+  //открытие модального окна
+  function openModal(imgSrc) {
+    const modalImg = modal.querySelector('.image-modal__img');
+    modalImg.src = imgSrc;
+    modal.classList.add('show');
+    document.body.classList.add('modal-open');
+  }
+
+  // закрытие модального окна
+  function closeModal() {
+    modal.classList.remove('show');
+    document.body.classList.remove('modal-open');
+  }
+
+  //4.обработчик 
+  // клики по изображению
+  document.querySelectorAll('.section-reviews__slider-img').forEach(img => {
+    img.addEventListener('click', function (e) {
+      //является ли клик частью переключения слайдов
+      if (!e.target.closest('.section-reviews__slider-item').classList.contains('item-3')) {
+        return;
+      }
+
+      // открытие только для центрального слайда
+      if (document.body.classList.contains('modal-open')) {
+        closeModal();
+      } else {
+        openModal(this.src);
+      }
+      e.stopPropagation();
+    });
+  });
+
+  // Закрытие модального окна
+  modal.querySelector('.image-modal__close').addEventListener('click', closeModal);
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
 });

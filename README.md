@@ -3,13 +3,13 @@
 ## Команды - инструкции по компиляции файлов Sass (SCSS) в CSS
 
 ```
-sass --watch assets/sass/app.scss assets/styles/style.css
+sass --watch src/assets/sass/app.scss src/assets/styles/style.css
 
-sass --watch assets/sass/about-me.scss assets/styles/about-me.css
+sass --watch src/assets/sass/about-me.scss src/assets/styles/about-me.css
 
-sass --watch assets/sass/privacy-policy.scss assets/styles/privacy-policy.css
+sass --watch src/assets/sass/privacy-policy.scss src/assets/styles/privacy-policy.css
 
-sass --watch assets/sass/offer.scss assets/styles/offer.css
+sass --watch src/assets/sass/offer.scss src/assets/styles/offer.css
 ```
 
 ## Именование веток
