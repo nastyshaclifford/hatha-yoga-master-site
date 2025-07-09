@@ -29,11 +29,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 25px;
 
     @media (max-width: 1340px) {
-      justify-content: flex-start;
+      justify-content: space-evenly;
       align-items: center;
       gap: 20px;
     }
@@ -176,8 +175,13 @@
 
   &-price {
     display: flex;
-    gap: 50px;
-    align-items: baseline;
+    margin-top: 15px;
+    align-items: center; 
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+    
+    //align-items: baseline;
   }
 }
 
@@ -187,6 +191,7 @@
   border: none;
   padding: 5px 24px;
   border-radius: 16px;
+  align-items: center; 
   font-size: 31px;
   cursor: pointer;
   transition: background-color 0.2s ease;
