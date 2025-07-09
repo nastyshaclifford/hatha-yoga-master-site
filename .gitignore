@@ -23,14 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-src/assets/styles/style.css
-src/assets/styles/style.css.map
-
-src/assets/styles/about-me.css
-src/assets/styles/about-me.css.map
-
-src/assets/styles/privacy-policy.css
-src/assets/styles/privacy-policy.css.map
-
-src/assets/styles/offer.css
-src/assets/styles/offer.css.map
