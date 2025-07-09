@@ -1047,7 +1047,31 @@ a {
   width: 100%;
   height: 310px;
   margin-top: 43px;
-  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .section-reviews .section-reviews__wrapper {
+    height: 290px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-reviews .section-reviews__wrapper {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-reviews .section-reviews__wrapper {
+    height: 240px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-reviews .section-reviews__wrapper {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-reviews .section-reviews__wrapper {
+    height: 180px;
+  }
 }
 .section-reviews .section-reviews__slider-items {
   width: 100%;
@@ -1066,13 +1090,13 @@ a {
   transform-origin: center;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
 }
 .section-reviews .section-reviews__slider-img {
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
   border-radius: 18px;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 .section-reviews .section-reviews__slider-nav {
@@ -1097,7 +1121,7 @@ a {
   background: rgba(7, 36, 43, 0.74);
 }
 .section-reviews .section-reviews__nav-item.active {
-  background: rgba(7, 36, 43, 0.9);
+  background: #2b2c2e;
   transform: scale(1.2);
 }
 .section-reviews .item-3 {
@@ -1109,36 +1133,275 @@ a {
   left: 50%;
   transform: translateX(-50%) scale(1);
 }
+@media screen and (max-width: 1440px) {
+  .section-reviews .item-3 {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-reviews .item-3 {
+    max-width: 650px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-reviews .item-3 {
+    max-width: 500px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-reviews .item-3 {
+    max-width: 400px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-reviews .item-3 {
+    max-width: 340px;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-reviews .item-3 {
+    max-width: 300px;
+    height: 170px;
+  }
+}
 .section-reviews .item-2,
 .section-reviews .item-4 {
   max-width: 800px;
   width: 100%;
   height: 280px;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: 2;
 }
+@media screen and (max-width: 1440px) {
+  .section-reviews .item-2,
+  .section-reviews .item-4 {
+    max-width: 700px;
+    height: 260px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-reviews .item-2,
+  .section-reviews .item-4 {
+    max-width: 550px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-reviews .item-2,
+  .section-reviews .item-4 {
+    max-width: 450px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-reviews .item-2,
+  .section-reviews .item-4 {
+    max-width: 350px;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-reviews .item-2,
+  .section-reviews .item-4 {
+    max-width: 300px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-reviews .item-2,
+  .section-reviews .item-4 {
+    max-width: 250px;
+    height: 150px;
+  }
+}
 .section-reviews .item-2 {
-  left: 25%;
+  left: 30%;
   transform: translateX(-50%) scale(0.9);
 }
+@media screen and (max-width: 1440px) {
+  .section-reviews .item-2 {
+    left: 32%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-reviews .item-2 {
+    left: 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-reviews .item-2 {
+    left: 38%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-reviews .item-2 {
+    left: 42%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-reviews .item-2 {
+    left: 45%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-reviews .item-2 {
+    left: 48%;
+  }
+}
 .section-reviews .item-4 {
-  left: 75%;
+  left: 70%;
   transform: translateX(-50%) scale(0.9);
+}
+@media screen and (max-width: 1440px) {
+  .section-reviews .item-4 {
+    left: 68%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-reviews .item-4 {
+    left: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-reviews .item-4 {
+    left: 62%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-reviews .item-4 {
+    left: 58%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-reviews .item-4 {
+    left: 55%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-reviews .item-4 {
+    left: 52%;
+  }
 }
 .section-reviews .item-1,
 .section-reviews .item-5 {
   width: 380px;
   height: 250px;
-  opacity: 0.5;
+  opacity: 0.6;
   z-index: 1;
 }
+@media screen and (max-width: 1440px) {
+  .section-reviews .item-1,
+  .section-reviews .item-5 {
+    width: 350px;
+    height: 230px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-reviews .item-1,
+  .section-reviews .item-5 {
+    width: 320px;
+    height: 210px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-reviews .item-1,
+  .section-reviews .item-5 {
+    width: 280px;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-reviews .item-1,
+  .section-reviews .item-5 {
+    width: 240px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-reviews .item-1,
+  .section-reviews .item-5 {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-reviews .item-1,
+  .section-reviews .item-5 {
+    width: 180px;
+    height: 140px;
+  }
+}
 .section-reviews .item-1 {
-  left: 10%;
+  left: 11%;
   transform: translateX(-50%) scale(0.8);
 }
+@media screen and (max-width: 1440px) {
+  .section-reviews .item-1 {
+    left: 13%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-reviews .item-1 {
+    left: 16%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-reviews .item-1 {
+    left: 20%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-reviews .item-1 {
+    left: 25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-reviews .item-1 {
+    left: 30%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-reviews .item-1 {
+    left: 35%;
+  }
+}
 .section-reviews .item-5 {
-  left: 90%;
+  left: 89%;
   transform: translateX(-50%) scale(0.8);
+}
+@media screen and (max-width: 1440px) {
+  .section-reviews .item-5 {
+    left: 87%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-reviews .item-5 {
+    left: 84%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-reviews .item-5 {
+    left: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-reviews .item-5 {
+    left: 75%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-reviews .item-5 {
+    left: 70%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-reviews .item-5 {
+    left: 65%;
+  }
 }
 .section-reviews .item-0,
 .section-reviews .item-6 {
@@ -1147,13 +1410,115 @@ a {
   opacity: 0.3;
   z-index: 0;
 }
+@media screen and (max-width: 1440px) {
+  .section-reviews .item-0,
+  .section-reviews .item-6 {
+    width: 320px;
+    height: 210px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-reviews .item-0,
+  .section-reviews .item-6 {
+    width: 280px;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-reviews .item-0,
+  .section-reviews .item-6 {
+    width: 240px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-reviews .item-0,
+  .section-reviews .item-6 {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-reviews .item-0,
+  .section-reviews .item-6 {
+    width: 180px;
+    height: 140px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-reviews .item-0,
+  .section-reviews .item-6 {
+    width: 160px;
+    height: 130px;
+  }
+}
 .section-reviews .item-0 {
   left: 10%;
   transform: translateX(-50%) scale(0.7);
 }
+@media screen and (max-width: 1440px) {
+  .section-reviews .item-0 {
+    left: 12%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-reviews .item-0 {
+    left: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-reviews .item-0 {
+    left: 18%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-reviews .item-0 {
+    left: 22%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-reviews .item-0 {
+    left: 25%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-reviews .item-0 {
+    left: 28%;
+  }
+}
 .section-reviews .item-6 {
   left: 105%;
   transform: translateX(-50%) scale(0.7);
+}
+@media screen and (max-width: 1440px) {
+  .section-reviews .item-6 {
+    left: 103%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-reviews .item-6 {
+    left: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-reviews .item-6 {
+    left: 97%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-reviews .item-6 {
+    left: 93%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-reviews .item-6 {
+    left: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-reviews .item-6 {
+    left: 87%;
+  }
 }
 
 .footer {

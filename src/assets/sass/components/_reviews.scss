@@ -27,7 +27,26 @@
     height: 310px;
 
     margin-top: 43px;
-    position: relative;
+
+    @media screen and (max-width: 1024px) {
+      height: 290px;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 270px;
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 240px;
+    }
+
+    @media screen and (max-width: 480px) {
+      height: 200px;
+    }
+
+    @media screen and (max-width: 375px) {
+      height: 180px;
+    }
   }
 
   .section-reviews__slider-items {
@@ -49,14 +68,15 @@
     transform-origin: center;
     overflow: hidden;
     cursor: pointer;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
   }
 
   .section-reviews__slider-img {
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
+    //box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
     border-radius: 18px;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     transition: transform 0.3s ease;
   }
 
@@ -85,7 +105,7 @@
     }
 
     &.active {
-      background: $page-title-color;
+      background: #2b2c2e;
       transform: scale(1.2);
     }
   }
@@ -99,6 +119,35 @@
     z-index: 3;
     left: 50%;
     transform: translateX(-50%) scale(1);
+
+    @media screen and (max-width: 1440px) {
+      max-width: 800px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: 650px;
+      height: 280px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 500px;
+      height: 250px;
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 400px;
+      height: 220px;
+    }
+
+    @media screen and (max-width: 480px) {
+      max-width: 340px;
+      height: 190px;
+    }
+
+    @media screen and (max-width: 375px) {
+      max-width: 300px;
+      height: 170px;
+    }
   }
 
   .item-2,
@@ -106,36 +155,192 @@
     max-width: 800px;
     width: 100%;
     height: 280px;
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: 2;
+
+    @media screen and (max-width: 1440px) {
+      max-width: 700px;
+      height: 260px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: 550px;
+      height: 240px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 450px;
+      height: 220px;
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 350px;
+      height: 190px;
+    }
+
+    @media screen and (max-width: 480px) {
+      max-width: 300px;
+      height: 170px;
+    }
+
+    @media screen and (max-width: 375px) {
+      max-width: 250px;
+      height: 150px;
+    }
   }
 
   .item-2 {
-    left: 25%;
+    left: 30%;
     transform: translateX(-50%) scale(0.9);
+
+    @media screen and (max-width: 1440px) {
+      left: 32%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      left: 35%;
+    }
+
+    @media screen and (max-width: 768px) {
+      left: 38%;
+    }
+
+    @media screen and (max-width: 576px) {
+      left: 42%;
+    }
+
+    @media screen and (max-width: 480px) {
+      left: 45%;
+    }
+
+    @media screen and (max-width: 375px) {
+      left: 48%;
+    }
   }
 
   .item-4 {
-    left: 75%;
+    left: 70%;
     transform: translateX(-50%) scale(0.9);
+
+    @media screen and (max-width: 1440px) {
+      left: 68%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      left: 65%;
+    }
+
+    @media screen and (max-width: 768px) {
+      left: 62%;
+    }
+
+    @media screen and (max-width: 576px) {
+      left: 58%;
+    }
+
+    @media screen and (max-width: 480px) {
+      left: 55%;
+    }
+
+    @media screen and (max-width: 375px) {
+      left: 52%;
+    }
   }
 
   .item-1,
   .item-5 {
     width: 380px;
     height: 250px;
-    opacity: 0.5;
+    opacity: 0.6;
     z-index: 1;
+
+    @media screen and (max-width: 1440px) {
+      width: 350px;
+      height: 230px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 320px;
+      height: 210px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 280px;
+      height: 190px;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 240px;
+      height: 170px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 200px;
+      height: 150px;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 180px;
+      height: 140px;
+    }
   }
 
   .item-1 {
-    left: 10%;
+    left: 11%;
     transform: translateX(-50%) scale(0.8);
+
+    @media screen and (max-width: 1440px) {
+      left: 13%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      left: 16%;
+    }
+
+    @media screen and (max-width: 768px) {
+      left: 20%;
+    }
+
+    @media screen and (max-width: 576px) {
+      left: 25%;
+    }
+
+    @media screen and (max-width: 480px) {
+      left: 30%;
+    }
+
+    @media screen and (max-width: 375px) {
+      left: 35%;
+    }
   }
 
   .item-5 {
-    left: 90%;
+    left: 89%;
     transform: translateX(-50%) scale(0.8);
+
+    @media screen and (max-width: 1440px) {
+      left: 87%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      left: 84%;
+    }
+
+    @media screen and (max-width: 768px) {
+      left: 80%;
+    }
+
+    @media screen and (max-width: 576px) {
+      left: 75%;
+    }
+
+    @media screen and (max-width: 480px) {
+      left: 70%;
+    }
+
+    @media screen and (max-width: 375px) {
+      left: 65%;
+    }
   }
 
   .item-0,
@@ -144,15 +349,93 @@
     height: 230px;
     opacity: 0.3;
     z-index: 0;
+
+    @media screen and (max-width: 1440px) {
+      width: 320px;
+      height: 210px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 280px;
+      height: 190px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 240px;
+      height: 170px;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 200px;
+      height: 150px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 180px;
+      height: 140px;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 160px;
+      height: 130px;
+    }
   }
 
   .item-0 {
     left: 10%;
     transform: translateX(-50%) scale(0.7);
+
+    @media screen and (max-width: 1440px) {
+      left: 12%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      left: 15%;
+    }
+
+    @media screen and (max-width: 768px) {
+      left: 18%;
+    }
+
+    @media screen and (max-width: 576px) {
+      left: 22%;
+    }
+
+    @media screen and (max-width: 480px) {
+      left: 25%;
+    }
+
+    @media screen and (max-width: 375px) {
+      left: 28%;
+    }
   }
 
   .item-6 {
     left: 105%;
     transform: translateX(-50%) scale(0.7);
+
+    @media screen and (max-width: 1440px) {
+      left: 103%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      left: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      left: 97%;
+    }
+
+    @media screen and (max-width: 576px) {
+      left: 93%;
+    }
+
+    @media screen and (max-width: 480px) {
+      left: 90%;
+    }
+
+    @media screen and (max-width: 375px) {
+      left: 87%;
+    }
   }
 }
