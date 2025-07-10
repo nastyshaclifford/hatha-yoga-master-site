@@ -19,6 +19,9 @@
   @media (max-width: 768px) {
     margin-left: 0;
   }
+  @media (max-width: 325px) {
+    font-size: 2rem;
+  }
 }
 .section-benefits__subtitle {
   font-family: "Inria Serif", serif;

@@ -64,6 +64,9 @@
     &:last-child {
       text-align: center;
     }
+    @media (max-width: 324px) {
+      max-width: 280px;
+    }
   }
 
   &-price {
