@@ -4,6 +4,7 @@
 .about-me {
     @extend %background;
     padding: 20px 40px;
+    min-height: 100vh;
 }
 
 .about-me__content {
