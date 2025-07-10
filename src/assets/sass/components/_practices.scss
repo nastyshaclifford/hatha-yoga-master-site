@@ -116,6 +116,7 @@
   }
 
   &-content {
+    overflow-y: auto;
     margin: 50px auto;
     background-color: #fff;
     color: #000;
@@ -157,7 +158,7 @@
     justify-content: space-around;
     gap: 20px;
 
-    @media (max-width: 723px) {
+    @media (max-width: 800px) {
       .modal-image {
         display: none;
       }
@@ -165,8 +166,16 @@
   }
 
   &-image {
-    max-width: 500px;
-    max-height: 800px;
+    max-width: 450px;
+    max-height: 750px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+    @media (max-width: 950px) {
+      max-width: 350px;
+      max-height: 650px;
+    }
   }
 
   &-description {
@@ -176,11 +185,11 @@
   &-price {
     display: flex;
     margin-top: 15px;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; 
-    
+    flex-wrap: wrap;
+
     //align-items: baseline;
   }
 }
@@ -191,7 +200,7 @@
   border: none;
   padding: 5px 24px;
   border-radius: 16px;
-  align-items: center; 
+  align-items: center;
   font-size: 31px;
   cursor: pointer;
   transition: background-color 0.2s ease;
