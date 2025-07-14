@@ -7,8 +7,6 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-
-  //outline: palevioletred solid 1px;
 }
 
 html {
@@ -63,6 +61,10 @@ a {
   font-style: italic;
   font-weight: 700;
   font-size: 2.25rem; // 36px
+
+  @media screen and (max-width: 358px) {
+    font-size: 2.125rem;
+  }
 }
 
 // это заголовки: "Здоровая спина» — заботьтесь о своем здоровье и комфорте каждый день" и "Растяжка в йоге — путь к гибкости и гармонии"
