@@ -16,7 +16,7 @@ const practicesData = [
         className: "p-3",
       },
     ],
-    image: "/images/modal1.png",
+    image: "./dist/images/modal1.png",
   },
   {
     title: "Растяжка в йоге — путь к гибкости и гармонии",
@@ -26,7 +26,7 @@ const practicesData = [
         className: "practice-item2",
       },
     ],
-    image: "/images/modal2.png",
+    image: "./dist/images/modal2.png",
   },
   {
     title: "Практика «Сложные асаны» — вызов для тела и разума",
@@ -36,7 +36,7 @@ const practicesData = [
         className: "practice-item3",
       },
     ],
-    image: "/images/modal3.png",
+    image: "./dist/images/modal3.png",
   },
   {
     title:
@@ -47,7 +47,7 @@ const practicesData = [
         className: "practice-item4",
       },
     ],
-    image: "/images/modal4.png",
+    image: "./dist/images/modal4.png",
   },
 ];
 
