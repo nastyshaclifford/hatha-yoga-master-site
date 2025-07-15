@@ -3,10 +3,11 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: './',
-  publicDir: 'assets',
+  publicDir: 'public',
   base: '/hatha-yoga-master-site/',
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
