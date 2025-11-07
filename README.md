@@ -9,7 +9,7 @@
 
 ###
 
-<img src=""<img width="1905" height="1071" alt="главный экран сайта" src="https://github.com/user-attachments/assets/6f523a46-06ba-41b6-b84e-c5c900850ab5" />
+<img width="1905" height="1071" alt="главный экран сайта" src="https://github.com/user-attachments/assets/6f523a46-06ba-41b6-b84e-c5c900850ab5" />
 
 ## Описание:
 
