@@ -9,7 +9,7 @@
 
 ###
 
-<img src="./docs/images/hero.png"  alt="главный экран сайта">
+<img src=""<img width="1905" height="1071" alt="главный экран сайта" src="https://github.com/user-attachments/assets/6f523a46-06ba-41b6-b84e-c5c900850ab5" />
 
 ## Описание:
 
@@ -51,9 +51,11 @@
 
 ###
 
-<img src="./docs/images/hover.png"  alt="эффект при наведении на кнопку ">
-<img src="./docs/images/modal.png"  alt="модальное окно">
-<img src="./docs/images/slider.png"  alt="галерея отзывов">
+<img width="1900" height="1069" alt="эффект при наведении на кнопку" src="https://github.com/user-attachments/assets/d9ddafbb-b2eb-429f-960c-7e3e07a31af7" />
+
+<img width="1920" height="910" alt="модальное окно" src="https://github.com/user-attachments/assets/02c9b9d2-a62b-4b0e-934e-eec96f4ff12d" />
+
+<img width="1898" height="530" alt="Галерея отзывов" src="https://github.com/user-attachments/assets/57843ce8-0ddd-4fb1-a9e8-2598ef082941" />
 
 ## Команда проекта:
 
